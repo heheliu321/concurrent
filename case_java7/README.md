@@ -5,12 +5,6 @@
 - 要在 JDK 7 下运行，否则扩容机制和 hash 的计算方法都变了 
 - 以下测试代码是精心准备的，不要随便改动 
 
-
-
-
-
-
-
 ```java
 public static void main(String[] args) {
 // 测试 java 7 中哪些数字的 hash 结果相等
@@ -168,8 +162,6 @@ e = next;
 源码分析 
 
 HashMap 的并发死链发生在扩容时
-
- 
 
 ```
 // 将 table 迁移至 newTable
